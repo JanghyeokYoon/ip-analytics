@@ -1,0 +1,2674 @@
+{
+ "dataset": "ipa-dataset",
+ "version": "2.6",
+ "status_as_of": "2025-06-30",
+ "generated_at": "2026-11-23T05:01:53Z",
+ "license": "저작권은 저자에게 있다. 이용 조건은 LICENSE 파일에 있다.",
+ "notice": "모든 기업·특허·번호·인물은 가상이며 실제 특허가 아니다.",
+ "n_files": 168,
+ "total_bytes": 314562633,
+ "files": [
+  {
+   "file": "LICENSE",
+   "rows": null,
+   "columns": null,
+   "sha256": "a8fcaa6b01039584f8c3f6752045d7dd20ebee63d8bfdf698d4861c7ef5568d4",
+   "bytes": 1402
+  },
+  {
+   "file": "README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "8c00cf0645c9b3bc113d2ff99afbfed988b5bc77af398594b9f4a4ebff30a861",
+   "bytes": 13606
+  },
+  {
+   "file": "SETUP.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "801448a51a0efca63b1f3aee3cdce9a9efcafc9bed577c5ec015f81178970392",
+   "bytes": 7317
+  },
+  {
+   "file": "appA/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "26300239d9cd15d5bfe9c3e33e00d26806f4c662aa7cb04292baaeefe7659a3a",
+   "bytes": 1136
+  },
+  {
+   "file": "appA/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "5336202c059d1657e7ea642a95d50ab3e633df628ad5d50860231f3f884ae534",
+   "bytes": 10851
+  },
+  {
+   "file": "appB/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "37467845f17708197b9e2c07d67ab35b2ab4f3bf9e978c7af1a53713a0d05017",
+   "bytes": 4396
+  },
+  {
+   "file": "appB/data_dictionary.csv",
+   "rows": 83,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "cb5876c842f4bb0b401360f86b958cb007c8fedd2b94487a936b854bc82460ba",
+   "bytes": 10044
+  },
+  {
+   "file": "appB/families.csv",
+   "rows": 5259,
+   "columns": [
+    "family_id",
+    "rep_pub_number",
+    "rep_doc_id",
+    "rep_kind",
+    "n_docs",
+    "family_size",
+    "priority_date",
+    "filing_date",
+    "publication_date",
+    "grant_date",
+    "assignee",
+    "assignee_std",
+    "assignee_id",
+    "assignee_type",
+    "cpc",
+    "sub_tech",
+    "title",
+    "n_backward",
+    "n_forward",
+    "norm_cit",
+    "legal_status",
+    "status_as_of",
+    "maintenance_events",
+    "n_nonfinal",
+    "n_final",
+    "rejection_types",
+    "inventor_ids",
+    "num_claims",
+    "expiry_date",
+    "remaining_term",
+    "in_analysis_set"
+   ],
+   "sha256": "5a5548fa40fefd88ef80bc686229c7bdecaaf1feeb5e12c8d4a7f06bfa7df47d",
+   "bytes": 2347514
+  },
+  {
+   "file": "appB/family_publications.csv",
+   "rows": 27780,
+   "columns": [
+    "family_id",
+    "office",
+    "pub_number",
+    "pub_id",
+    "kind",
+    "pub_date",
+    "appl_number",
+    "appl_id",
+    "appl_date"
+   ],
+   "sha256": "3138c70ee7ee55eb6951b416719bba1de3b8cd56c2dd919ee4e62665b9d020eb",
+   "bytes": 2955278
+  },
+  {
+   "file": "appB/kr_admin_events.csv",
+   "rows": 31190,
+   "columns": [
+    "appl_id",
+    "seq",
+    "stage",
+    "doc_name",
+    "event_date",
+    "direction",
+    "status"
+   ],
+   "sha256": "986d8ff48e5896d0ef75d6ab1e7713fa7e32cd036de816fbca5968e50f88943f",
+   "bytes": 3243363
+  },
+  {
+   "file": "appB/kr_annual_fees.csv",
+   "rows": 7141,
+   "columns": [
+    "reg_id",
+    "year_from",
+    "year_to",
+    "paid_date",
+    "amount_krw",
+    "surcharge",
+    "surcharge_krw"
+   ],
+   "sha256": "5855fcbefc952d0fb34d9e111515053f3f8a6e025568b7307d30807133e4c6ab",
+   "bytes": 360376
+  },
+  {
+   "file": "appB/kr_patents.csv",
+   "rows": 3512,
+   "columns": [
+    "appl_no",
+    "appl_id",
+    "appl_date",
+    "open_no",
+    "open_date",
+    "exam_req_date",
+    "reg_no",
+    "reg_id",
+    "reg_date",
+    "reg_pub_date",
+    "family_id",
+    "applicant_raw",
+    "assignee_id",
+    "title_kr",
+    "ipc",
+    "claim_count",
+    "status_kr",
+    "disposal_date",
+    "expiry_date",
+    "last_paid_year",
+    "extinct_date",
+    "extinct_reason"
+   ],
+   "sha256": "d7e76ce23a11fbdf170346c167ea584787d274b83a8c88f41779696855c647fe",
+   "bytes": 1262422
+  },
+  {
+   "file": "appB/kr_rights_events.csv",
+   "rows": 41,
+   "columns": [
+    "reg_id",
+    "event_date",
+    "event_type",
+    "party",
+    "detail"
+   ],
+   "sha256": "5fe149713b5171a285550779bf1c3f8fdf5d58d594be717e89a647ad88e1fc43",
+   "bytes": 4800
+  },
+  {
+   "file": "appB/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "7cc77d90582167c98ba2bd57f755cf93149d445738a3377e68948a2a8e2134a5",
+   "bytes": 13237
+  },
+  {
+   "file": "appC/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "903114bd6ed34120ab5580fc29ba76b7a3a9c31286d59e2850da287ba7d7f533",
+   "bytes": 2753
+  },
+  {
+   "file": "appC/data_dictionary.csv",
+   "rows": 33,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "4e91f07cc109bbee4e268427fbbaf1ebbecd4e39e7ef1c6f117abe9ac3828c23",
+   "bytes": 4425
+  },
+  {
+   "file": "appC/families.csv",
+   "rows": 5259,
+   "columns": [
+    "family_id",
+    "rep_pub_number",
+    "rep_doc_id",
+    "rep_kind",
+    "n_docs",
+    "family_size",
+    "priority_date",
+    "filing_date",
+    "publication_date",
+    "grant_date",
+    "assignee",
+    "assignee_std",
+    "assignee_id",
+    "assignee_type",
+    "cpc",
+    "sub_tech",
+    "title",
+    "n_backward",
+    "n_forward",
+    "norm_cit",
+    "legal_status",
+    "status_as_of",
+    "maintenance_events",
+    "n_nonfinal",
+    "n_final",
+    "rejection_types",
+    "inventor_ids",
+    "num_claims",
+    "expiry_date",
+    "remaining_term",
+    "in_analysis_set"
+   ],
+   "sha256": "5a5548fa40fefd88ef80bc686229c7bdecaaf1feeb5e12c8d4a7f06bfa7df47d",
+   "bytes": 2347514
+  },
+  {
+   "file": "appC/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "9f54697933401bcf691266166cd17e460a8352b6b14bbddfd88939054372830f",
+   "bytes": 3207
+  },
+  {
+   "file": "ch01/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "585b20aa98015acec206535d27a0ddd9acb06920f6c63c572e5280b59a78ed72",
+   "bytes": 2318
+  },
+  {
+   "file": "ch01/data_dictionary.csv",
+   "rows": 33,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "4e91f07cc109bbee4e268427fbbaf1ebbecd4e39e7ef1c6f117abe9ac3828c23",
+   "bytes": 4425
+  },
+  {
+   "file": "ch01/families.csv",
+   "rows": 5259,
+   "columns": [
+    "family_id",
+    "rep_pub_number",
+    "rep_doc_id",
+    "rep_kind",
+    "n_docs",
+    "family_size",
+    "priority_date",
+    "filing_date",
+    "publication_date",
+    "grant_date",
+    "assignee",
+    "assignee_std",
+    "assignee_id",
+    "assignee_type",
+    "cpc",
+    "sub_tech",
+    "title",
+    "n_backward",
+    "n_forward",
+    "norm_cit",
+    "legal_status",
+    "status_as_of",
+    "maintenance_events",
+    "n_nonfinal",
+    "n_final",
+    "rejection_types",
+    "inventor_ids",
+    "num_claims",
+    "expiry_date",
+    "remaining_term",
+    "in_analysis_set"
+   ],
+   "sha256": "5a5548fa40fefd88ef80bc686229c7bdecaaf1feeb5e12c8d4a7f06bfa7df47d",
+   "bytes": 2347514
+  },
+  {
+   "file": "ch01/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "18d15a9d246ad09a5f88bc1a581daff62eb5a7a16eae13c12d120a88d76ca876",
+   "bytes": 3708
+  },
+  {
+   "file": "ch02/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "ae4c1919f30275f5aa1331848b303d4379e816aad8e0fc3339160d5d0f515e2a",
+   "bytes": 3573
+  },
+  {
+   "file": "ch02/data_dictionary.csv",
+   "rows": 25,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "c48b6852920bb156817623afefa0911d3861d08d6fad1c95a1d967035ab80921",
+   "bytes": 2789
+  },
+  {
+   "file": "ch02/family_docs.csv",
+   "rows": 176,
+   "columns": [
+    "family_id",
+    "office",
+    "pub_number",
+    "pub_id",
+    "kind",
+    "pub_date",
+    "appl_number",
+    "appl_id",
+    "appl_date"
+   ],
+   "sha256": "969a1bf1bdb99b5f257655e5705f8012a3987e878cb815406177e52542c13e6f",
+   "bytes": 18765
+  },
+  {
+   "file": "ch02/pct_data.csv",
+   "rows": 30,
+   "columns": [
+    "family_id",
+    "pct_appl_number",
+    "pct_filing_date",
+    "wo_number",
+    "wo_date",
+    "office",
+    "entry_date"
+   ],
+   "sha256": "e14d1a2dc3152322200ac1087fa10699673d52aac5b032761d164b04e03470ff",
+   "bytes": 2831
+  },
+  {
+   "file": "ch02/priority_claims.csv",
+   "rows": 117,
+   "columns": [
+    "office",
+    "appl_id",
+    "prior_seq",
+    "prior_office",
+    "prior_number",
+    "prior_date",
+    "prior_kind"
+   ],
+   "sha256": "7225d53872250d097e0dc26f12dddfe1ff751f7b3fac8c42723403e88456b305",
+   "bytes": 7758
+  },
+  {
+   "file": "ch02/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "627a399d01120d889f06d3679cf3cee7336439b47e0145f6b19b506ba781a3d3",
+   "bytes": 6417
+  },
+  {
+   "file": "ch03/KIPRIS_10-2004-0900007_recovered.txt",
+   "rows": null,
+   "columns": null,
+   "sha256": "2841dc99637459abdf2405804544e509849798a340eeffe8cbae65dfd3bf2652",
+   "bytes": 6998
+  },
+  {
+   "file": "ch03/KIPRIS_10-2005-0900003_expired.txt",
+   "rows": null,
+   "columns": null,
+   "sha256": "81fa20ed665d275d56d79f0f382e5a71692553c216ee8cd34163293ec1866be2",
+   "bytes": 6892
+  },
+  {
+   "file": "ch03/KIPRIS_10-2006-0900011_grace.txt",
+   "rows": null,
+   "columns": null,
+   "sha256": "f1561469363d76987526b4f16e522d01d108db131064ff489a9aac79cc7667c7",
+   "bytes": 7269
+  },
+  {
+   "file": "ch03/KIPRIS_10-2010-0900005_in_force.txt",
+   "rows": null,
+   "columns": null,
+   "sha256": "e7c40d5fe50c025cb37645fcf5493e1b67af35dc3ad6a11a77333e64be3becb9",
+   "bytes": 5966
+  },
+  {
+   "file": "ch03/KIPRIS_10-2013-0900036_lapsed.txt",
+   "rows": null,
+   "columns": null,
+   "sha256": "54c81f4712ad8049ceb9a9173d6caafc7480abacf25e6e146e45b4737b857d1d",
+   "bytes": 6000
+  },
+  {
+   "file": "ch03/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "fd6d430a14e77962f6f893df70de94fa3f5648e0fef5924f1f8dd151e4d97744",
+   "bytes": 4923
+  },
+  {
+   "file": "ch03/data_dictionary.csv",
+   "rows": 49,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "5afa8d0a6108a95053f6ffebd09ab5cb47f071eafa5a84e7f2ecfa3ac5a3adde",
+   "bytes": 5863
+  },
+  {
+   "file": "ch03/fee_schedule_kr.csv",
+   "rows": 12,
+   "columns": [
+    "office",
+    "item",
+    "year_from",
+    "year_to",
+    "base_krw_or_usd",
+    "per_claim_krw",
+    "entity",
+    "valid_from",
+    "valid_to"
+   ],
+   "sha256": "a4ad705d331bdbddccce69d800c534f5e8ceaeca29bf0e0baadb17c42f81cb16",
+   "bytes": 996
+  },
+  {
+   "file": "ch03/kr_annual_fees.csv",
+   "rows": 2950,
+   "columns": [
+    "reg_id",
+    "year_from",
+    "year_to",
+    "paid_date",
+    "amount_krw",
+    "surcharge",
+    "surcharge_krw"
+   ],
+   "sha256": "89d76a402f77403af23dd2e7357189500e4999375cb97333cd881d383413d356",
+   "bytes": 149721
+  },
+  {
+   "file": "ch03/kr_portfolio.csv",
+   "rows": 580,
+   "columns": [
+    "appl_no",
+    "appl_id",
+    "appl_date",
+    "open_no",
+    "open_date",
+    "exam_req_date",
+    "reg_no",
+    "reg_id",
+    "reg_date",
+    "reg_pub_date",
+    "family_id",
+    "title_kr",
+    "ipc",
+    "claim_count",
+    "status_kr",
+    "expiry_date",
+    "last_paid_year",
+    "extinct_date",
+    "extinct_reason",
+    "n_forward_other",
+    "n_foreign_offices",
+    "roadmap_candidate",
+    "gov_funded"
+   ],
+   "sha256": "6141cbfd4b5625952cea824a5906433df9d64ca9b030d1dc23b5f68b9543d4e5",
+   "bytes": 204630
+  },
+  {
+   "file": "ch03/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "48f879f14fa054c80973e65561f6986c676d4afb179233334d64827fc94392c1",
+   "bytes": 6015
+  },
+  {
+   "file": "ch03/roadmap_items.csv",
+   "rows": 3,
+   "columns": [
+    "item_id",
+    "item_type",
+    "description"
+   ],
+   "sha256": "59a202363e75694bdcd1876c724de1960e90d01f1faf39883b8246191bc76c67",
+   "bytes": 423
+  },
+  {
+   "file": "ch04/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "4977d2eaef9038bcc3fb72aeaa468f9781613af8f718608495afddc10cfc2e48",
+   "bytes": 3025
+  },
+  {
+   "file": "ch04/data_dictionary.csv",
+   "rows": 29,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "a5d2e3585939c80a26ff1831824d6574ce94e78c806605cb5ba3342398c57de3",
+   "bytes": 3500
+  },
+  {
+   "file": "ch04/family_docs.csv",
+   "rows": 132,
+   "columns": [
+    "family_id",
+    "office",
+    "pub_number",
+    "pub_id",
+    "kind",
+    "pub_date",
+    "appl_number",
+    "appl_id",
+    "appl_date",
+    "office_status",
+    "pta_days",
+    "terminal_disclaimer_date"
+   ],
+   "sha256": "c1d2fee98f6ddb8c4d5689f927368dcfbf8088824ef48762d6684db2d708758c",
+   "bytes": 16306
+  },
+  {
+   "file": "ch04/gazettes.jsonl",
+   "rows": 5,
+   "columns": [
+    "family_id",
+    "applicant_std",
+    "pct_371_date",
+    "pta_days",
+    "terminal_disclaimer_date",
+    "publication",
+    "grant"
+   ],
+   "sha256": "c68f0feea5e6642b228392b248caa98477c8c51370f7693dd5536b925d51eb81",
+   "bytes": 41878
+  },
+  {
+   "file": "ch04/priority_claims.csv",
+   "rows": 113,
+   "columns": [
+    "office",
+    "appl_id",
+    "prior_seq",
+    "prior_office",
+    "prior_number",
+    "prior_date",
+    "prior_kind"
+   ],
+   "sha256": "1f7f695c6b496443458c10d753d8a929f38d685aca92529b651de04181de0560",
+   "bytes": 7452
+  },
+  {
+   "file": "ch04/product_spec.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "e0c76cfcc6ee10632bd02a58014403bd0bce241d6730597406c837eb3c3355e2",
+   "bytes": 1672
+  },
+  {
+   "file": "ch04/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "459c4c60aed130eb4d3c2349e3b13ed3c5df6bb6ece0623cf98ffc11ce491fa8",
+   "bytes": 4699
+  },
+  {
+   "file": "ch05/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "1e74049c1cac53765cbfc1c1f476e52fe5a5d8755d6cccd022c60fd3c8ca0825",
+   "bytes": 2916
+  },
+  {
+   "file": "ch05/classify_input.csv",
+   "rows": 300,
+   "columns": [
+    "family_id",
+    "title",
+    "abstract",
+    "cpc"
+   ],
+   "sha256": "218531f808b4eeda44a1c65ea68da0edbb40b4aff24701d395dabdb10d60d813",
+   "bytes": 369277
+  },
+  {
+   "file": "ch05/data_dictionary.csv",
+   "rows": 26,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "09c114a6d4d4d43d09293cd7c10daa3884786d8e4eecfd1e6dd0b4dc86fc2c03",
+   "bytes": 3308
+  },
+  {
+   "file": "ch05/docs_us.csv",
+   "rows": 9000,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "priority_date",
+    "pub_date",
+    "assignee_raw",
+    "cpc"
+   ],
+   "sha256": "72f647ce01be83e020b0c8fead5ed9cab528e7b831fdae0229f57c97908b8361",
+   "bytes": 1269553
+  },
+  {
+   "file": "ch05/eval_sample.csv",
+   "rows": 100,
+   "columns": [
+    "family_id",
+    "rater_a",
+    "rater_b"
+   ],
+   "sha256": "e36e6653c668fb3dc7cd6b42ea46e257f350cee7088fd793a3430530099f303a",
+   "bytes": 1981
+  },
+  {
+   "file": "ch05/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "6ae730eac0f67d9e542b71b76b685743f1275813b0b4e902b516df2fd9cd2ab7",
+   "bytes": 9855
+  },
+  {
+   "file": "ch05/subtech_definitions.csv",
+   "rows": 8,
+   "columns": [
+    "code",
+    "name",
+    "definition",
+    "include",
+    "exclude",
+    "example_family_ids"
+   ],
+   "sha256": "554e3d427929361c3e02f2691b83717823d107859e7568c240c77bddd1838e44",
+   "bytes": 3432
+  },
+  {
+   "file": "ch05/subtech_examples.csv",
+   "rows": 24,
+   "columns": [
+    "code",
+    "family_id",
+    "title",
+    "abstract"
+   ],
+   "sha256": "9abde9b5bba5b5306f9aa0da0d539affeb7ee922db15d8076c4bdf5e9996f4a2",
+   "bytes": 27538
+  },
+  {
+   "file": "ch06/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "581456f2d7d84601b2f6868d2ad605412f39c83e6c0fc7edf1a2d874aaa1ba0c",
+   "bytes": 3257
+  },
+  {
+   "file": "ch06/data_dictionary.csv",
+   "rows": 23,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "4d3e111f7f3a00291de93f7e3e30b9640885ec4dd9116d2cec21712a5ecb4b0a",
+   "bytes": 3081
+  },
+  {
+   "file": "ch06/known_items.csv",
+   "rows": 30,
+   "columns": [
+    "family_id",
+    "pub_number",
+    "title",
+    "source"
+   ],
+   "sha256": "695d3f4e444ade69577c17fa1cc3eabf19ce80dc9fad54f66b99a40f9618c980",
+   "bytes": 5886
+  },
+  {
+   "file": "ch06/practice_set.csv",
+   "rows": 10,
+   "columns": [
+    "family_id",
+    "pub_number",
+    "title",
+    "abstract",
+    "judgment",
+    "category_note",
+    "reason"
+   ],
+   "sha256": "9c6619bbec7b51614223e577099f11a3d958fdc13f7b562e301d274156a88c2e",
+   "bytes": 13301
+  },
+  {
+   "file": "ch06/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "66ba7ab7fe5a4f655b8b21d371be8e98b174cad5526e6a1bd222ea9679b05394",
+   "bytes": 15242
+  },
+  {
+   "file": "ch06/search_corpus_part1.jsonl",
+   "rows": 4666,
+   "columns": [
+    "family_id",
+    "pub_number",
+    "priority_date",
+    "pub_date",
+    "assignee_raw",
+    "assignee_db_group",
+    "cpc",
+    "title",
+    "abstract",
+    "first_claim"
+   ],
+   "sha256": "bad7104f60869176cb96d56cf717f96cae25eddff4310e7429118d03a5238992",
+   "bytes": 7997722
+  },
+  {
+   "file": "ch06/search_corpus_part2.jsonl",
+   "rows": 4666,
+   "columns": [
+    "family_id",
+    "pub_number",
+    "priority_date",
+    "pub_date",
+    "assignee_raw",
+    "assignee_db_group",
+    "cpc",
+    "title",
+    "abstract",
+    "first_claim"
+   ],
+   "sha256": "c02ab8974d3c029e41776ca7b46f06359e2538629cf7cf7f3efc35030846afbe",
+   "bytes": 8139936
+  },
+  {
+   "file": "ch06/search_corpus_part3.jsonl",
+   "rows": 4666,
+   "columns": [
+    "family_id",
+    "pub_number",
+    "priority_date",
+    "pub_date",
+    "assignee_raw",
+    "assignee_db_group",
+    "cpc",
+    "title",
+    "abstract",
+    "first_claim"
+   ],
+   "sha256": "53d5d7cab963718c8e136579823b2114d03b7b392e164d2943184c7b9e8a4453",
+   "bytes": 8313490
+  },
+  {
+   "file": "ch07/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "7bb750849c9d12b48501964c9c2a6e76fad14ddca35a12aa5c7e3575dc0118c8",
+   "bytes": 7316
+  },
+  {
+   "file": "ch07/assignments_raw.csv",
+   "rows": 6932,
+   "columns": [
+    "rf_id",
+    "record_date",
+    "exec_date",
+    "convey_type",
+    "assignor",
+    "assignee",
+    "doc_id"
+   ],
+   "sha256": "c1de4376137f12f93cf7ad7556743088736460d837cf41659588e7b8475eac5a",
+   "bytes": 926191
+  },
+  {
+   "file": "ch07/citations.csv",
+   "rows": 77841,
+   "columns": [
+    "citing_doc_id",
+    "citing_family_id",
+    "cited_doc_id",
+    "cited_family_id",
+    "citing_date",
+    "citing_role"
+   ],
+   "sha256": "363c214d6ce3aefb7575adc17eff2b0a3cadca47c83127977554f12de3f0f53e",
+   "bytes": 5527306
+  },
+  {
+   "file": "ch07/data_dictionary.csv",
+   "rows": 97,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "9e2da1b9253dd67549afecd25b7101747b331e08b2582d92738ff03d74eeb1be",
+   "bytes": 12552
+  },
+  {
+   "file": "ch07/docs_raw_part1.csv",
+   "rows": 4081,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "kind",
+    "family_id",
+    "application_number",
+    "priority_date",
+    "filing_date",
+    "publication_date",
+    "grant_date",
+    "assignee",
+    "cpc",
+    "title",
+    "abstract",
+    "first_claim",
+    "earliest_us_filing"
+   ],
+   "sha256": "f8c26925a23a4effb3a80c525ea563e1dd44ef384caa469d9a91781dd8cc70a1",
+   "bytes": 7319065
+  },
+  {
+   "file": "ch07/docs_raw_part2.csv",
+   "rows": 4081,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "kind",
+    "family_id",
+    "application_number",
+    "priority_date",
+    "filing_date",
+    "publication_date",
+    "grant_date",
+    "assignee",
+    "cpc",
+    "title",
+    "abstract",
+    "first_claim",
+    "earliest_us_filing"
+   ],
+   "sha256": "8ba476d042155a8692e84d11b8918041b083cb977c4ba30f7db29a5d97d5aad2",
+   "bytes": 7298600
+  },
+  {
+   "file": "ch07/docs_raw_part3.csv",
+   "rows": 4079,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "kind",
+    "family_id",
+    "application_number",
+    "priority_date",
+    "filing_date",
+    "publication_date",
+    "grant_date",
+    "assignee",
+    "cpc",
+    "title",
+    "abstract",
+    "first_claim",
+    "earliest_us_filing"
+   ],
+   "sha256": "0b4079fe268026f84e2f22bad9b16058ab7b1e5f94560d88c4df5d8a0edb314d",
+   "bytes": 7255516
+  },
+  {
+   "file": "ch07/documents.csv",
+   "rows": 41608,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "kind",
+    "family_id",
+    "application_number",
+    "application_id",
+    "filing_date",
+    "pub_date",
+    "grant_date",
+    "set",
+    "assignee_raw"
+   ],
+   "sha256": "29d0f5e61e900fd608f6515454ab38924f83636e0ac2a3b9d6bf93d90367ce08",
+   "bytes": 5835735
+  },
+  {
+   "file": "ch07/families.csv",
+   "rows": 5259,
+   "columns": [
+    "family_id",
+    "rep_pub_number",
+    "rep_doc_id",
+    "rep_kind",
+    "n_docs",
+    "family_size",
+    "priority_date",
+    "filing_date",
+    "publication_date",
+    "grant_date",
+    "assignee",
+    "assignee_std",
+    "assignee_id",
+    "assignee_type",
+    "cpc",
+    "sub_tech",
+    "title",
+    "n_backward",
+    "n_forward",
+    "norm_cit",
+    "legal_status",
+    "status_as_of",
+    "maintenance_events",
+    "n_nonfinal",
+    "n_final",
+    "rejection_types",
+    "inventor_ids",
+    "num_claims",
+    "expiry_date",
+    "remaining_term",
+    "in_analysis_set"
+   ],
+   "sha256": "5a5548fa40fefd88ef80bc686229c7bdecaaf1feeb5e12c8d4a7f06bfa7df47d",
+   "bytes": 2347514
+  },
+  {
+   "file": "ch07/family_docs_raw.csv",
+   "rows": 25656,
+   "columns": [
+    "family_id",
+    "office",
+    "pub_number",
+    "pub_id",
+    "kind",
+    "pub_date",
+    "appl_number",
+    "appl_id",
+    "appl_date"
+   ],
+   "sha256": "6e53928a3cfd33c71343c33c7585c8c8dd24fab1fb68aab86355556b60191c67",
+   "bytes": 2721788
+  },
+  {
+   "file": "ch07/file_wrapper_raw.csv",
+   "rows": 29669,
+   "columns": [
+    "application_number",
+    "event_date",
+    "event_code",
+    "event_desc"
+   ],
+   "sha256": "4537ff89a5fe9f2b23994efcb4c87218fae7b9244b1e82774be01c6304c2d0c4",
+   "bytes": 1759584
+  },
+  {
+   "file": "ch07/maintenance_raw.csv",
+   "rows": 2236,
+   "columns": [
+    "patent_number",
+    "entity",
+    "event_code",
+    "event_date",
+    "effective_date"
+   ],
+   "sha256": "666ed604849acc67e1800874dc2ce56704fe2bcc1c617b9d1dadb3aee1ccf6a4",
+   "bytes": 118683
+  },
+  {
+   "file": "ch07/priority_raw.csv",
+   "rows": 19362,
+   "columns": [
+    "office",
+    "appl_id",
+    "prior_seq",
+    "prior_office",
+    "prior_number",
+    "prior_date",
+    "prior_kind"
+   ],
+   "sha256": "23c72b6aebc042d02e7fe157f5b329bae5c971f50064fa2e21ec38419f07c11f",
+   "bytes": 1255524
+  },
+  {
+   "file": "ch07/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "0327640dd9084765f69f75995c1040e224dc9d67af091c10f0aed5756510315e",
+   "bytes": 9419
+  },
+  {
+   "file": "ch08/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "0f3ba1c299d7354cd77cb54b80e1eddf933f430d0b40a4f3ce104ce592d52942",
+   "bytes": 5216
+  },
+  {
+   "file": "ch08/applicants.csv",
+   "rows": 5778,
+   "columns": [
+    "family_id",
+    "assignee_id",
+    "assignee_std",
+    "assignee_sequence"
+   ],
+   "sha256": "ac9205e3c79fbba10faaed9559e17a52ab3c27d0694657354509db95af29565d",
+   "bytes": 313577
+  },
+  {
+   "file": "ch08/assignees.csv",
+   "rows": 421,
+   "columns": [
+    "assignee_id",
+    "assignee_std",
+    "assignee_type",
+    "role",
+    "country",
+    "parent_id"
+   ],
+   "sha256": "519420070d045bb5653dc53fb24223e834e66084f87294b44d01fe860f744641",
+   "bytes": 26065
+  },
+  {
+   "file": "ch08/citations.csv",
+   "rows": 77841,
+   "columns": [
+    "citing_doc_id",
+    "citing_family_id",
+    "cited_doc_id",
+    "cited_family_id",
+    "citing_date",
+    "citing_role"
+   ],
+   "sha256": "363c214d6ce3aefb7575adc17eff2b0a3cadca47c83127977554f12de3f0f53e",
+   "bytes": 5527306
+  },
+  {
+   "file": "ch08/citing_docs.csv",
+   "rows": 14094,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "kind",
+    "family_id",
+    "pub_date",
+    "grant_date",
+    "assignee_std",
+    "assignee_id"
+   ],
+   "sha256": "eea196b178749652dc16f0184e38e55b6518e4a9d3ea787aa87de6adda6d08d6",
+   "bytes": 1534603
+  },
+  {
+   "file": "ch08/cpc.csv",
+   "rows": 21349,
+   "columns": [
+    "family_id",
+    "cpc",
+    "cpc_sequence",
+    "cpc_type"
+   ],
+   "sha256": "4e1dbaf1c9794d64ac49b8795af21f647947b2ab0df5a91ebc6eea0dc6854f6e",
+   "bytes": 862204
+  },
+  {
+   "file": "ch08/data_dictionary.csv",
+   "rows": 69,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "bfd402f745eb6186794f462acfdb97f663cbf437842a61ebf3189b15c208aad8",
+   "bytes": 8591
+  },
+  {
+   "file": "ch08/families.csv",
+   "rows": 5259,
+   "columns": [
+    "family_id",
+    "rep_pub_number",
+    "rep_doc_id",
+    "rep_kind",
+    "n_docs",
+    "family_size",
+    "priority_date",
+    "filing_date",
+    "publication_date",
+    "grant_date",
+    "assignee",
+    "assignee_std",
+    "assignee_id",
+    "assignee_type",
+    "cpc",
+    "sub_tech",
+    "title",
+    "n_backward",
+    "n_forward",
+    "norm_cit",
+    "legal_status",
+    "status_as_of",
+    "maintenance_events",
+    "n_nonfinal",
+    "n_final",
+    "rejection_types",
+    "inventor_ids",
+    "num_claims",
+    "expiry_date",
+    "remaining_term",
+    "in_analysis_set"
+   ],
+   "sha256": "5a5548fa40fefd88ef80bc686229c7bdecaaf1feeb5e12c8d4a7f06bfa7df47d",
+   "bytes": 2347514
+  },
+  {
+   "file": "ch08/norm_cit.csv",
+   "rows": 5199,
+   "columns": [
+    "family_id",
+    "assignee_std",
+    "assignee_id",
+    "priority_year",
+    "sub_tech",
+    "grant_date",
+    "norm_cit",
+    "window_complete"
+   ],
+   "sha256": "7989f23aef2ff213d73012df51d1a318702539735734791f6f0748fb6b763cf5",
+   "bytes": 427047
+  },
+  {
+   "file": "ch08/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "1b261d92a33731cf33bb2de49c650d1bb49488f006f045ce74804cdf19ee3ad8",
+   "bytes": 8889
+  },
+  {
+   "file": "ch09/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "17e095d74b47817324429530aa13c45fec668f740055334c39473ec5aca9fdcc",
+   "bytes": 4091
+  },
+  {
+   "file": "ch09/applicants.csv",
+   "rows": 5778,
+   "columns": [
+    "family_id",
+    "assignee_id",
+    "assignee_std",
+    "assignee_sequence"
+   ],
+   "sha256": "ac9205e3c79fbba10faaed9559e17a52ab3c27d0694657354509db95af29565d",
+   "bytes": 313577
+  },
+  {
+   "file": "ch09/candidates.csv",
+   "rows": 8,
+   "columns": [
+    "candidate_id",
+    "family_id",
+    "assignee_std",
+    "pub_number",
+    "title"
+   ],
+   "sha256": "e723d92791e05c3239c656e67fa708eee89034f38eb875d6453186c4b05c87e7",
+   "bytes": 1734
+  },
+  {
+   "file": "ch09/citations.csv",
+   "rows": 77841,
+   "columns": [
+    "citing_doc_id",
+    "citing_family_id",
+    "cited_doc_id",
+    "cited_family_id",
+    "citing_date",
+    "citing_role"
+   ],
+   "sha256": "363c214d6ce3aefb7575adc17eff2b0a3cadca47c83127977554f12de3f0f53e",
+   "bytes": 5527306
+  },
+  {
+   "file": "ch09/citing_docs.csv",
+   "rows": 14094,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "kind",
+    "family_id",
+    "pub_date",
+    "grant_date",
+    "assignee_std",
+    "assignee_id"
+   ],
+   "sha256": "eea196b178749652dc16f0184e38e55b6518e4a9d3ea787aa87de6adda6d08d6",
+   "bytes": 1534603
+  },
+  {
+   "file": "ch09/data_dictionary.csv",
+   "rows": 56,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "d94593442a5b8f0ec052f202f725025159be7e3bd31c6e5471f31e37564f876a",
+   "bytes": 7168
+  },
+  {
+   "file": "ch09/families.csv",
+   "rows": 5259,
+   "columns": [
+    "family_id",
+    "rep_pub_number",
+    "rep_doc_id",
+    "rep_kind",
+    "n_docs",
+    "family_size",
+    "priority_date",
+    "filing_date",
+    "publication_date",
+    "grant_date",
+    "assignee",
+    "assignee_std",
+    "assignee_id",
+    "assignee_type",
+    "cpc",
+    "sub_tech",
+    "title",
+    "n_backward",
+    "n_forward",
+    "norm_cit",
+    "legal_status",
+    "status_as_of",
+    "maintenance_events",
+    "n_nonfinal",
+    "n_final",
+    "rejection_types",
+    "inventor_ids",
+    "num_claims",
+    "expiry_date",
+    "remaining_term",
+    "in_analysis_set"
+   ],
+   "sha256": "5a5548fa40fefd88ef80bc686229c7bdecaaf1feeb5e12c8d4a7f06bfa7df47d",
+   "bytes": 2347514
+  },
+  {
+   "file": "ch09/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "870b85ddc9365882f3ffd82589a0bf60376158e1440a3e5586e999a2a9a8184a",
+   "bytes": 8041
+  },
+  {
+   "file": "ch10/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "9c27d0fced6414602cc86fe8e5f5da34a4fd8f01122b91c63c3ca2aa8b881504",
+   "bytes": 2916
+  },
+  {
+   "file": "ch10/abstracts.csv",
+   "rows": 5198,
+   "columns": [
+    "family_id",
+    "priority_year",
+    "assignee_std",
+    "sub_tech",
+    "title",
+    "abstract"
+   ],
+   "sha256": "a4eee373bf0d31e6d45ec14226ad2a36fc5655c39f5522e96457920876dce1a4",
+   "bytes": 6532240
+  },
+  {
+   "file": "ch10/data_dictionary.csv",
+   "rows": 39,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "6cb3ed953361202f228e3e752ffdbd75f0711fe6674bc0a7b581b96968f497eb",
+   "bytes": 5113
+  },
+  {
+   "file": "ch10/families.csv",
+   "rows": 5259,
+   "columns": [
+    "family_id",
+    "rep_pub_number",
+    "rep_doc_id",
+    "rep_kind",
+    "n_docs",
+    "family_size",
+    "priority_date",
+    "filing_date",
+    "publication_date",
+    "grant_date",
+    "assignee",
+    "assignee_std",
+    "assignee_id",
+    "assignee_type",
+    "cpc",
+    "sub_tech",
+    "title",
+    "n_backward",
+    "n_forward",
+    "norm_cit",
+    "legal_status",
+    "status_as_of",
+    "maintenance_events",
+    "n_nonfinal",
+    "n_final",
+    "rejection_types",
+    "inventor_ids",
+    "num_claims",
+    "expiry_date",
+    "remaining_term",
+    "in_analysis_set"
+   ],
+   "sha256": "5a5548fa40fefd88ef80bc686229c7bdecaaf1feeb5e12c8d4a7f06bfa7df47d",
+   "bytes": 2347514
+  },
+  {
+   "file": "ch10/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "6a3a4873bcf69e82870b2d69bd2cdc174b7371873ff4fbffffe2eae5c391a277",
+   "bytes": 8815
+  },
+  {
+   "file": "ch11/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "4e4499fe6cd71f22e9e60fcdb0fea6f28d95aa482beb63aef7b31b15ed0fb18d",
+   "bytes": 4949
+  },
+  {
+   "file": "ch11/brief_similarity.csv",
+   "rows": 5598,
+   "columns": [
+    "rank",
+    "family_id",
+    "assignee_std",
+    "priority_date",
+    "similarity"
+   ],
+   "sha256": "460e91c7415eed5e1701c67a63b20e5c1aa1678eb9018eed1f651a7e2d274a90",
+   "bytes": 397485
+  },
+  {
+   "file": "ch11/corpus_part1.jsonl",
+   "rows": 2799,
+   "columns": [
+    "family_id",
+    "assignee_std",
+    "priority_date",
+    "cpc",
+    "title",
+    "abstract",
+    "first_claim"
+   ],
+   "sha256": "2c27f8e1ceeadc51a9be15ff10783767c8cedb3ba1d5844804cab775adaefd84",
+   "bytes": 5195616
+  },
+  {
+   "file": "ch11/corpus_part2.jsonl",
+   "rows": 2799,
+   "columns": [
+    "family_id",
+    "assignee_std",
+    "priority_date",
+    "cpc",
+    "title",
+    "abstract",
+    "first_claim"
+   ],
+   "sha256": "b94a835e9c834ade81fc91f48a08e2464a305f76048900b5f04f1ea5daa0cad2",
+   "bytes": 5321996
+  },
+  {
+   "file": "ch11/data_dictionary.csv",
+   "rows": 55,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "21c44d49826417c34da4b54f05bbfabc7f16285b06fecba56f021e98e12fba91",
+   "bytes": 7031
+  },
+  {
+   "file": "ch11/design_brief.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "a62f9d984f795bf43eb14eb52aa3b8bd50986a0bea9c6660dd3afc2c9154e306",
+   "bytes": 2298
+  },
+  {
+   "file": "ch11/embeddings_128d.csv",
+   "rows": 5598,
+   "columns": [
+    "family_id",
+    "e000",
+    "e001",
+    "e002",
+    "e003",
+    "e004",
+    "e005",
+    "e006",
+    "e007",
+    "e008",
+    "e009",
+    "e010",
+    "e011",
+    "e012",
+    "e013",
+    "e014",
+    "e015",
+    "e016",
+    "e017",
+    "e018",
+    "e019",
+    "e020",
+    "e021",
+    "e022",
+    "e023",
+    "e024",
+    "e025",
+    "e026",
+    "e027",
+    "e028",
+    "e029",
+    "e030",
+    "e031",
+    "e032",
+    "e033",
+    "e034",
+    "e035",
+    "e036",
+    "e037",
+    "e038",
+    "e039",
+    "e040",
+    "e041",
+    "e042",
+    "e043",
+    "e044",
+    "e045",
+    "e046",
+    "e047",
+    "e048",
+    "e049",
+    "e050",
+    "e051",
+    "e052",
+    "e053",
+    "e054",
+    "e055",
+    "e056",
+    "e057",
+    "e058",
+    "e059",
+    "e060",
+    "e061",
+    "e062",
+    "e063",
+    "e064",
+    "e065",
+    "e066",
+    "e067",
+    "e068",
+    "e069",
+    "e070",
+    "e071",
+    "e072",
+    "e073",
+    "e074",
+    "e075",
+    "e076",
+    "e077",
+    "e078",
+    "e079",
+    "e080",
+    "e081",
+    "e082",
+    "e083",
+    "e084",
+    "e085",
+    "e086",
+    "e087",
+    "e088",
+    "e089",
+    "e090",
+    "e091",
+    "e092",
+    "e093",
+    "e094",
+    "e095",
+    "e096",
+    "e097",
+    "e098",
+    "e099",
+    "e100",
+    "e101",
+    "e102",
+    "e103",
+    "e104",
+    "e105",
+    "e106",
+    "e107",
+    "e108",
+    "e109",
+    "e110",
+    "e111",
+    "e112",
+    "e113",
+    "e114",
+    "e115",
+    "e116",
+    "e117",
+    "e118",
+    "e119",
+    "e120",
+    "e121",
+    "e122",
+    "e123",
+    "e124",
+    "e125",
+    "e126",
+    "e127"
+   ],
+   "sha256": "334ca329be7a3be705fddec59d3e52a9b2b39a4356c617d8023792a9fd4383fc",
+   "bytes": 6795221
+  },
+  {
+   "file": "ch11/embeddings_meta.json",
+   "rows": null,
+   "columns": null,
+   "sha256": "e9db1d2d91ddc306b575bbdb0338d88e5a0ef8aa5eaa8b8bc27077272bf851b7",
+   "bytes": 438
+  },
+  {
+   "file": "ch11/eval_sample.csv",
+   "rows": 100,
+   "columns": [
+    "family_id",
+    "rater_a",
+    "rater_b"
+   ],
+   "sha256": "61a01d999bd09a8f0bae545cdf7001b22b7fc0befca43f4d537fb80898f9eced",
+   "bytes": 2578
+  },
+  {
+   "file": "ch11/families.csv",
+   "rows": 5259,
+   "columns": [
+    "family_id",
+    "rep_pub_number",
+    "rep_doc_id",
+    "rep_kind",
+    "n_docs",
+    "family_size",
+    "priority_date",
+    "filing_date",
+    "publication_date",
+    "grant_date",
+    "assignee",
+    "assignee_std",
+    "assignee_id",
+    "assignee_type",
+    "cpc",
+    "sub_tech",
+    "title",
+    "n_backward",
+    "n_forward",
+    "norm_cit",
+    "legal_status",
+    "status_as_of",
+    "maintenance_events",
+    "n_nonfinal",
+    "n_final",
+    "rejection_types",
+    "inventor_ids",
+    "num_claims",
+    "expiry_date",
+    "remaining_term",
+    "in_analysis_set"
+   ],
+   "sha256": "5a5548fa40fefd88ef80bc686229c7bdecaaf1feeb5e12c8d4a7f06bfa7df47d",
+   "bytes": 2347514
+  },
+  {
+   "file": "ch11/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "ef6d51ed13eed6af64ecd6c198f95f1b8a41b3ea6f8f4f32624409091f7ea869",
+   "bytes": 10650
+  },
+  {
+   "file": "ch11/search_result.csv",
+   "rows": 187,
+   "columns": [
+    "family_id",
+    "pub_number",
+    "title"
+   ],
+   "sha256": "0676a6ebdd94e07ee1cc0ffc3f4ffa0b9dc615205a491f33ea6a6afb82cf4134",
+   "bytes": 25116
+  },
+  {
+   "file": "ch12/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "3e2c41230d2b01bf3b4ba224063a4607fb31f8774febe74684a1cddbbf6c884f",
+   "bytes": 5975
+  },
+  {
+   "file": "ch12/applicants.csv",
+   "rows": 5778,
+   "columns": [
+    "family_id",
+    "assignee_id",
+    "assignee_std",
+    "assignee_sequence"
+   ],
+   "sha256": "ac9205e3c79fbba10faaed9559e17a52ab3c27d0694657354509db95af29565d",
+   "bytes": 313577
+  },
+  {
+   "file": "ch12/citations.csv",
+   "rows": 77841,
+   "columns": [
+    "citing_doc_id",
+    "citing_family_id",
+    "cited_doc_id",
+    "cited_family_id",
+    "citing_date",
+    "citing_role"
+   ],
+   "sha256": "363c214d6ce3aefb7575adc17eff2b0a3cadca47c83127977554f12de3f0f53e",
+   "bytes": 5527306
+  },
+  {
+   "file": "ch12/corpus_part1.jsonl",
+   "rows": 2799,
+   "columns": [
+    "family_id",
+    "assignee_std",
+    "priority_date",
+    "cpc",
+    "title",
+    "abstract",
+    "first_claim"
+   ],
+   "sha256": "2c27f8e1ceeadc51a9be15ff10783767c8cedb3ba1d5844804cab775adaefd84",
+   "bytes": 5195616
+  },
+  {
+   "file": "ch12/corpus_part2.jsonl",
+   "rows": 2799,
+   "columns": [
+    "family_id",
+    "assignee_std",
+    "priority_date",
+    "cpc",
+    "title",
+    "abstract",
+    "first_claim"
+   ],
+   "sha256": "b94a835e9c834ade81fc91f48a08e2464a305f76048900b5f04f1ea5daa0cad2",
+   "bytes": 5321996
+  },
+  {
+   "file": "ch12/cpc.csv",
+   "rows": 21349,
+   "columns": [
+    "family_id",
+    "cpc",
+    "cpc_sequence",
+    "cpc_type"
+   ],
+   "sha256": "4e1dbaf1c9794d64ac49b8795af21f647947b2ab0df5a91ebc6eea0dc6854f6e",
+   "bytes": 862204
+  },
+  {
+   "file": "ch12/data_dictionary.csv",
+   "rows": 84,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "ac5abd269cc951a36aba068227606bf36cdbd0a22e99cd1afd1475d7e7a33b8f",
+   "bytes": 10517
+  },
+  {
+   "file": "ch12/embeddings_128d.csv",
+   "rows": 5598,
+   "columns": [
+    "family_id",
+    "e000",
+    "e001",
+    "e002",
+    "e003",
+    "e004",
+    "e005",
+    "e006",
+    "e007",
+    "e008",
+    "e009",
+    "e010",
+    "e011",
+    "e012",
+    "e013",
+    "e014",
+    "e015",
+    "e016",
+    "e017",
+    "e018",
+    "e019",
+    "e020",
+    "e021",
+    "e022",
+    "e023",
+    "e024",
+    "e025",
+    "e026",
+    "e027",
+    "e028",
+    "e029",
+    "e030",
+    "e031",
+    "e032",
+    "e033",
+    "e034",
+    "e035",
+    "e036",
+    "e037",
+    "e038",
+    "e039",
+    "e040",
+    "e041",
+    "e042",
+    "e043",
+    "e044",
+    "e045",
+    "e046",
+    "e047",
+    "e048",
+    "e049",
+    "e050",
+    "e051",
+    "e052",
+    "e053",
+    "e054",
+    "e055",
+    "e056",
+    "e057",
+    "e058",
+    "e059",
+    "e060",
+    "e061",
+    "e062",
+    "e063",
+    "e064",
+    "e065",
+    "e066",
+    "e067",
+    "e068",
+    "e069",
+    "e070",
+    "e071",
+    "e072",
+    "e073",
+    "e074",
+    "e075",
+    "e076",
+    "e077",
+    "e078",
+    "e079",
+    "e080",
+    "e081",
+    "e082",
+    "e083",
+    "e084",
+    "e085",
+    "e086",
+    "e087",
+    "e088",
+    "e089",
+    "e090",
+    "e091",
+    "e092",
+    "e093",
+    "e094",
+    "e095",
+    "e096",
+    "e097",
+    "e098",
+    "e099",
+    "e100",
+    "e101",
+    "e102",
+    "e103",
+    "e104",
+    "e105",
+    "e106",
+    "e107",
+    "e108",
+    "e109",
+    "e110",
+    "e111",
+    "e112",
+    "e113",
+    "e114",
+    "e115",
+    "e116",
+    "e117",
+    "e118",
+    "e119",
+    "e120",
+    "e121",
+    "e122",
+    "e123",
+    "e124",
+    "e125",
+    "e126",
+    "e127"
+   ],
+   "sha256": "334ca329be7a3be705fddec59d3e52a9b2b39a4356c617d8023792a9fd4383fc",
+   "bytes": 6795221
+  },
+  {
+   "file": "ch12/embeddings_meta.json",
+   "rows": null,
+   "columns": null,
+   "sha256": "e9db1d2d91ddc306b575bbdb0338d88e5a0ef8aa5eaa8b8bc27077272bf851b7",
+   "bytes": 438
+  },
+  {
+   "file": "ch12/examination.csv",
+   "rows": 5590,
+   "columns": [
+    "application_number",
+    "application_id",
+    "doc_id",
+    "family_id",
+    "examiner_id",
+    "art_unit",
+    "filing_date",
+    "outcome",
+    "disposal_date",
+    "n_nonfinal",
+    "n_final",
+    "rejection_types",
+    "has_rejection_data"
+   ],
+   "sha256": "8e736b439e029feb476f326da7346806ddde73bdd54f01844680b832c0f786ee",
+   "bytes": 658414
+  },
+  {
+   "file": "ch12/families.csv",
+   "rows": 5259,
+   "columns": [
+    "family_id",
+    "rep_pub_number",
+    "rep_doc_id",
+    "rep_kind",
+    "n_docs",
+    "family_size",
+    "priority_date",
+    "filing_date",
+    "publication_date",
+    "grant_date",
+    "assignee",
+    "assignee_std",
+    "assignee_id",
+    "assignee_type",
+    "cpc",
+    "sub_tech",
+    "title",
+    "n_backward",
+    "n_forward",
+    "norm_cit",
+    "legal_status",
+    "status_as_of",
+    "maintenance_events",
+    "n_nonfinal",
+    "n_final",
+    "rejection_types",
+    "inventor_ids",
+    "num_claims",
+    "expiry_date",
+    "remaining_term",
+    "in_analysis_set"
+   ],
+   "sha256": "5a5548fa40fefd88ef80bc686229c7bdecaaf1feeb5e12c8d4a7f06bfa7df47d",
+   "bytes": 2347514
+  },
+  {
+   "file": "ch12/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "173f9f6a0bd8c3d5ce0da0c63617989df8c1d8b17de4d28d995d4bb4ab688949",
+   "bytes": 11065
+  },
+  {
+   "file": "ch12/texts_us_part1.jsonl",
+   "rows": 1722,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "kind",
+    "title",
+    "abstract",
+    "claims",
+    "first_claim"
+   ],
+   "sha256": "9e9d18214195d44a8177a5d766a136d3c39eaa0d7fd3cec14dfcff4e39c7ac30",
+   "bytes": 7842672
+  },
+  {
+   "file": "ch12/texts_us_part2.jsonl",
+   "rows": 1722,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "kind",
+    "title",
+    "abstract",
+    "claims",
+    "first_claim"
+   ],
+   "sha256": "a9ee01bccf36bcd786878789a4f4a57ee6a58ae23a0f23699f8b6aa7d6826217",
+   "bytes": 7877389
+  },
+  {
+   "file": "ch12/texts_us_part3.jsonl",
+   "rows": 1722,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "kind",
+    "title",
+    "abstract",
+    "claims",
+    "first_claim"
+   ],
+   "sha256": "1c704a6b1d904a48dbd7e740ff86a49fc2dc0e14a34ee9f3dd4c61a84e0748cf",
+   "bytes": 7839814
+  },
+  {
+   "file": "ch12/texts_us_part4.jsonl",
+   "rows": 1722,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "kind",
+    "title",
+    "abstract",
+    "claims",
+    "first_claim"
+   ],
+   "sha256": "538fb9e542380adbe6584923c64fcc2e1075c90f1c541a13310263c4cb301ec4",
+   "bytes": 7818543
+  },
+  {
+   "file": "ch12/texts_us_part5.jsonl",
+   "rows": 1718,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "kind",
+    "title",
+    "abstract",
+    "claims",
+    "first_claim"
+   ],
+   "sha256": "b86952d66cfc89b396f72b90bc24e466eff3b73cf85956716908c829ba9f8eb3",
+   "bytes": 7880548
+  },
+  {
+   "file": "ch12/topic_rules.csv",
+   "rows": 12,
+   "columns": [
+    "topic_id",
+    "topic_name",
+    "sub_tech",
+    "include_terms",
+    "exclude_terms",
+    "priority"
+   ],
+   "sha256": "4c9110836fcebb488d8d3da8d0cc6b2b49162c99f0820af47f6b0af68bf72ec9",
+   "bytes": 2372
+  },
+  {
+   "file": "ch13/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "be62f8881c2f8112db50683ce55764c3dfc957be362afc5f37bad0cb629f4d02",
+   "bytes": 7403
+  },
+  {
+   "file": "ch13/buyer_assumptions.csv",
+   "rows": 15,
+   "columns": [
+    "buyer_id",
+    "assignee_std",
+    "year",
+    "revenue_material_krw",
+    "revenue_cell_krw"
+   ],
+   "sha256": "bce56b0a186ff5e7db3b12e77977a8d8300690fe57b2ca5e7806afafd88251a1",
+   "bytes": 1160
+  },
+  {
+   "file": "ch13/citations.csv",
+   "rows": 77841,
+   "columns": [
+    "citing_doc_id",
+    "citing_family_id",
+    "cited_doc_id",
+    "cited_family_id",
+    "citing_date",
+    "citing_role"
+   ],
+   "sha256": "363c214d6ce3aefb7575adc17eff2b0a3cadca47c83127977554f12de3f0f53e",
+   "bytes": 5527306
+  },
+  {
+   "file": "ch13/citing_docs.csv",
+   "rows": 14094,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "kind",
+    "family_id",
+    "pub_date",
+    "grant_date",
+    "assignee_std",
+    "assignee_id"
+   ],
+   "sha256": "eea196b178749652dc16f0184e38e55b6518e4a9d3ea787aa87de6adda6d08d6",
+   "bytes": 1534603
+  },
+  {
+   "file": "ch13/comparable_licenses.csv",
+   "rows": 5,
+   "columns": [
+    "contract_id",
+    "field",
+    "licensor_type",
+    "licensee_type",
+    "exclusive",
+    "base_revenue",
+    "royalty_rate_pct",
+    "upfront_krw",
+    "term_years",
+    "source_type",
+    "note"
+   ],
+   "sha256": "0032f52c61294622493532d21539702a6c0bf7d0f4886b3696389f42f6e95fbf",
+   "bytes": 1360
+  },
+  {
+   "file": "ch13/data_dictionary.csv",
+   "rows": 113,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "0ac6d987a89932307d23c7e9613ea8a877a77a01cca7f0a91ea438f2a1552b53",
+   "bytes": 13717
+  },
+  {
+   "file": "ch13/families.csv",
+   "rows": 5259,
+   "columns": [
+    "family_id",
+    "rep_pub_number",
+    "rep_doc_id",
+    "rep_kind",
+    "n_docs",
+    "family_size",
+    "priority_date",
+    "filing_date",
+    "publication_date",
+    "grant_date",
+    "assignee",
+    "assignee_std",
+    "assignee_id",
+    "assignee_type",
+    "cpc",
+    "sub_tech",
+    "title",
+    "n_backward",
+    "n_forward",
+    "norm_cit",
+    "legal_status",
+    "status_as_of",
+    "maintenance_events",
+    "n_nonfinal",
+    "n_final",
+    "rejection_types",
+    "inventor_ids",
+    "num_claims",
+    "expiry_date",
+    "remaining_term",
+    "in_analysis_set"
+   ],
+   "sha256": "5a5548fa40fefd88ef80bc686229c7bdecaaf1feeb5e12c8d4a7f06bfa7df47d",
+   "bytes": 2347514
+  },
+  {
+   "file": "ch13/family_publications.csv",
+   "rows": 27780,
+   "columns": [
+    "family_id",
+    "office",
+    "pub_number",
+    "pub_id",
+    "kind",
+    "pub_date",
+    "appl_number",
+    "appl_id",
+    "appl_date"
+   ],
+   "sha256": "3138c70ee7ee55eb6951b416719bba1de3b8cd56c2dd919ee4e62665b9d020eb",
+   "bytes": 2955278
+  },
+  {
+   "file": "ch13/fee_schedule.csv",
+   "rows": 21,
+   "columns": [
+    "office",
+    "item",
+    "year_from",
+    "year_to",
+    "base_krw_or_usd",
+    "per_claim_krw",
+    "entity",
+    "valid_from",
+    "valid_to"
+   ],
+   "sha256": "6d10f5b40970947ba1e3a0a1f4a75b3eb494b169b5a1ef2ca687e26c22368b72",
+   "bytes": 1575
+  },
+  {
+   "file": "ch13/focal_portfolio.csv",
+   "rows": 148,
+   "columns": [
+    "patent_id",
+    "family_id",
+    "sub_tech",
+    "grant_date",
+    "num_claims",
+    "filing_date",
+    "pta_days",
+    "td_date",
+    "n_forward_other",
+    "legal_status"
+   ],
+   "sha256": "087cdfecaff18f5994eb110db26f0084b69a78bfc62a30cc59b4262a02d0eb1f",
+   "bytes": 12047
+  },
+  {
+   "file": "ch13/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "f77cd8bccd4b19ce025e210f95253be7d53f33493e69c02dfcd57bbe9d877aa2",
+   "bytes": 7262
+  },
+  {
+   "file": "ch13/texts_us_part1.jsonl",
+   "rows": 1722,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "kind",
+    "title",
+    "abstract",
+    "claims",
+    "first_claim"
+   ],
+   "sha256": "9e9d18214195d44a8177a5d766a136d3c39eaa0d7fd3cec14dfcff4e39c7ac30",
+   "bytes": 7842672
+  },
+  {
+   "file": "ch13/texts_us_part2.jsonl",
+   "rows": 1722,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "kind",
+    "title",
+    "abstract",
+    "claims",
+    "first_claim"
+   ],
+   "sha256": "a9ee01bccf36bcd786878789a4f4a57ee6a58ae23a0f23699f8b6aa7d6826217",
+   "bytes": 7877389
+  },
+  {
+   "file": "ch13/texts_us_part3.jsonl",
+   "rows": 1722,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "kind",
+    "title",
+    "abstract",
+    "claims",
+    "first_claim"
+   ],
+   "sha256": "1c704a6b1d904a48dbd7e740ff86a49fc2dc0e14a34ee9f3dd4c61a84e0748cf",
+   "bytes": 7839814
+  },
+  {
+   "file": "ch13/texts_us_part4.jsonl",
+   "rows": 1722,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "kind",
+    "title",
+    "abstract",
+    "claims",
+    "first_claim"
+   ],
+   "sha256": "538fb9e542380adbe6584923c64fcc2e1075c90f1c541a13310263c4cb301ec4",
+   "bytes": 7818543
+  },
+  {
+   "file": "ch13/texts_us_part5.jsonl",
+   "rows": 1718,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "kind",
+    "title",
+    "abstract",
+    "claims",
+    "first_claim"
+   ],
+   "sha256": "b86952d66cfc89b396f72b90bc24e466eff3b73cf85956716908c829ba9f8eb3",
+   "bytes": 7880548
+  },
+  {
+   "file": "ch13/us_maintenance.csv",
+   "rows": 1661,
+   "columns": [
+    "patent_id",
+    "family_id",
+    "grant_date",
+    "entity",
+    "event_code",
+    "event_date",
+    "effective_date"
+   ],
+   "sha256": "46420ab5bfbdbb3f487deff26d77456db70e0fda686012eefc51264eef55a6c2",
+   "bytes": 127835
+  },
+  {
+   "file": "ch13/us_maintenance_focal.csv",
+   "rows": 184,
+   "columns": [
+    "patent_id",
+    "family_id",
+    "grant_date",
+    "entity",
+    "event_code",
+    "event_date",
+    "effective_date"
+   ],
+   "sha256": "25185fcc1c830f46b1e7071386850ee7dd7e89eb8bfb086dffb6376e16d5bc62",
+   "bytes": 14221
+  },
+  {
+   "file": "ch14/README.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "7a03e94aed738eb3a4195da894d07ab0cfd767331d3b156950bc361176a56b94",
+   "bytes": 7054
+  },
+  {
+   "file": "ch14/applicants.csv",
+   "rows": 5778,
+   "columns": [
+    "family_id",
+    "assignee_id",
+    "assignee_std",
+    "assignee_sequence"
+   ],
+   "sha256": "ac9205e3c79fbba10faaed9559e17a52ab3c27d0694657354509db95af29565d",
+   "bytes": 313577
+  },
+  {
+   "file": "ch14/citations.csv",
+   "rows": 77841,
+   "columns": [
+    "citing_doc_id",
+    "citing_family_id",
+    "cited_doc_id",
+    "cited_family_id",
+    "citing_date",
+    "citing_role"
+   ],
+   "sha256": "363c214d6ce3aefb7575adc17eff2b0a3cadca47c83127977554f12de3f0f53e",
+   "bytes": 5527306
+  },
+  {
+   "file": "ch14/data_dictionary.csv",
+   "rows": 107,
+   "columns": [
+    "file",
+    "column",
+    "type",
+    "description_ko",
+    "example"
+   ],
+   "sha256": "58011b9c8bc58ed2cd1ba564fb933fcbd090d985167bc5577bd66e907ded885e",
+   "bytes": 13707
+  },
+  {
+   "file": "ch14/documents.csv",
+   "rows": 41608,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "kind",
+    "family_id",
+    "application_number",
+    "application_id",
+    "filing_date",
+    "pub_date",
+    "grant_date",
+    "set",
+    "assignee_raw"
+   ],
+   "sha256": "29d0f5e61e900fd608f6515454ab38924f83636e0ac2a3b9d6bf93d90367ce08",
+   "bytes": 5835735
+  },
+  {
+   "file": "ch14/families.csv",
+   "rows": 5259,
+   "columns": [
+    "family_id",
+    "rep_pub_number",
+    "rep_doc_id",
+    "rep_kind",
+    "n_docs",
+    "family_size",
+    "priority_date",
+    "filing_date",
+    "publication_date",
+    "grant_date",
+    "assignee",
+    "assignee_std",
+    "assignee_id",
+    "assignee_type",
+    "cpc",
+    "sub_tech",
+    "title",
+    "n_backward",
+    "n_forward",
+    "norm_cit",
+    "legal_status",
+    "status_as_of",
+    "maintenance_events",
+    "n_nonfinal",
+    "n_final",
+    "rejection_types",
+    "inventor_ids",
+    "num_claims",
+    "expiry_date",
+    "remaining_term",
+    "in_analysis_set"
+   ],
+   "sha256": "5a5548fa40fefd88ef80bc686229c7bdecaaf1feeb5e12c8d4a7f06bfa7df47d",
+   "bytes": 2347514
+  },
+  {
+   "file": "ch14/family_publications.csv",
+   "rows": 27780,
+   "columns": [
+    "family_id",
+    "office",
+    "pub_number",
+    "pub_id",
+    "kind",
+    "pub_date",
+    "appl_number",
+    "appl_id",
+    "appl_date"
+   ],
+   "sha256": "3138c70ee7ee55eb6951b416719bba1de3b8cd56c2dd919ee4e62665b9d020eb",
+   "bytes": 2955278
+  },
+  {
+   "file": "ch14/new_assignments.csv",
+   "rows": 4221,
+   "columns": [
+    "release_quarter",
+    "rf_id",
+    "record_date",
+    "exec_date",
+    "convey_type",
+    "assignor",
+    "assignee",
+    "doc_id",
+    "family_id"
+   ],
+   "sha256": "6a76f56c5ad6a412089b632789daaac296651317dc8f2b47a3445d7aab60dc3b",
+   "bytes": 641188
+  },
+  {
+   "file": "ch14/new_citations.csv",
+   "rows": 41119,
+   "columns": [
+    "release_quarter",
+    "citing_doc_id",
+    "citing_family_id",
+    "citing_assignee_raw",
+    "cited_doc_id",
+    "cited_family_id",
+    "citing_date",
+    "citing_role"
+   ],
+   "sha256": "0709931138db4a3fd2abe9a97c7e143f4a1d7880a64836b3ab77f19ef80e8c1a",
+   "bytes": 4577940
+  },
+  {
+   "file": "ch14/product_spec.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "e0c76cfcc6ee10632bd02a58014403bd0bce241d6730597406c837eb3c3355e2",
+   "bytes": 1672
+  },
+  {
+   "file": "ch14/prompts.md",
+   "rows": null,
+   "columns": null,
+   "sha256": "bb72c84dcad3a6aa92757acc960dd45859eed57a7d767059d6cba0cba69d42a9",
+   "bytes": 11301
+  },
+  {
+   "file": "ch14/texts_us_part1.jsonl",
+   "rows": 1722,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "kind",
+    "title",
+    "abstract",
+    "claims",
+    "first_claim"
+   ],
+   "sha256": "9e9d18214195d44a8177a5d766a136d3c39eaa0d7fd3cec14dfcff4e39c7ac30",
+   "bytes": 7842672
+  },
+  {
+   "file": "ch14/texts_us_part2.jsonl",
+   "rows": 1722,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "kind",
+    "title",
+    "abstract",
+    "claims",
+    "first_claim"
+   ],
+   "sha256": "a9ee01bccf36bcd786878789a4f4a57ee6a58ae23a0f23699f8b6aa7d6826217",
+   "bytes": 7877389
+  },
+  {
+   "file": "ch14/texts_us_part3.jsonl",
+   "rows": 1722,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "kind",
+    "title",
+    "abstract",
+    "claims",
+    "first_claim"
+   ],
+   "sha256": "1c704a6b1d904a48dbd7e740ff86a49fc2dc0e14a34ee9f3dd4c61a84e0748cf",
+   "bytes": 7839814
+  },
+  {
+   "file": "ch14/texts_us_part4.jsonl",
+   "rows": 1722,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "kind",
+    "title",
+    "abstract",
+    "claims",
+    "first_claim"
+   ],
+   "sha256": "538fb9e542380adbe6584923c64fcc2e1075c90f1c541a13310263c4cb301ec4",
+   "bytes": 7818543
+  },
+  {
+   "file": "ch14/texts_us_part5.jsonl",
+   "rows": 1718,
+   "columns": [
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "kind",
+    "title",
+    "abstract",
+    "claims",
+    "first_claim"
+   ],
+   "sha256": "b86952d66cfc89b396f72b90bc24e466eff3b73cf85956716908c829ba9f8eb3",
+   "bytes": 7880548
+  },
+  {
+   "file": "ch14/topic_assignment.csv",
+   "rows": 5198,
+   "columns": [
+    "family_id",
+    "topic_id"
+   ],
+   "sha256": "4fed4492fe077ee9b258e11d4b8256c2a6ce240943eca49a48acbd265506a263",
+   "bytes": 93590
+  },
+  {
+   "file": "ch14/topic_scores.csv",
+   "rows": 12,
+   "columns": [
+    "topic_id",
+    "topic_name",
+    "sub_tech",
+    "n_families",
+    "cagr_10y",
+    "novelty_score",
+    "gap_score",
+    "opportunity_score"
+   ],
+   "sha256": "4eb10aa907a3f2b2499adb317745ea126b40e3f786cc3aaf78fdb814faef2601",
+   "bytes": 1036
+  },
+  {
+   "file": "ch14/updates.csv",
+   "rows": 4149,
+   "columns": [
+    "release_quarter",
+    "doc_id",
+    "pub_number",
+    "family_id",
+    "assignee_raw",
+    "cpc",
+    "title",
+    "kind"
+   ],
+   "sha256": "2959b9c87985016de59558680ee3a3d5e17575c96631d71aa0d57379bac24247",
+   "bytes": 990270
+  }
+ ]
+}

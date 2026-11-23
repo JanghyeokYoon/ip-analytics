@@ -1,0 +1,8 @@
+{
+ "model": "TF-IDF(1~2-gram, sublinear tf, min_df 3, max_df 0.6, 영어 불용어) + TruncatedSVD 128차원(시드 11), L2 정규화",
+ "dimension": 128,
+ "n_documents": 5598,
+ "text_fields": "abstract + first_claim",
+ "explained_variance": 0.4666,
+ "note": "문장 임베딩 모델을 돌릴 수 없는 환경을 위한 고정 임베딩. 직접 임베딩을 돌리면 그 결과로 대체하고 상위 100건의 겹침을 적는다."
+}
